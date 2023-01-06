@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floorplan Mapper</title>
+  <style>
+    img#image {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .mapper {
+      position: relative;
+    }
+
+    .mapper svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- an file input and an image -->
+  <input type="file" id="file" accept="image/*">
+  <div class="mapper">
+    <img id="image" src="">
+    <svg class="map">
+    </svg>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
